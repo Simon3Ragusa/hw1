@@ -1,0 +1,167 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    background-color: rgb(46, 43, 43);
+}
+
+.button{
+    cursor: pointer;
+}
+
+#go-back{
+    display: flex;
+    align-items: center;
+
+    margin: 10px;
+    width: 98%;
+
+    color:rgb(182, 182, 40);
+    font-size: 1.2em;
+}
+
+#go-back img{
+    width: 50px;
+}
+
+#go-back div{
+    margin: 10px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: fit-content;
+    border-radius: 0.75rem;
+    background-color: rgb(17, 17, 17);
+    padding: 2rem;
+    color: rgb(248, 249, 234);
+
+    margin-top: 40px;
+    margin-bottom: 50px;
+
+    font-size: 1.1em;
+}
+
+
+.title{
+    
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+#data{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-section{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+#personal-data{
+    margin-right: 100px;
+}
+
+#account-data{
+    margin-right: 30px;
+}
+
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    margin-bottom: 30px;
+}
+
+.input-group label {
+    color: rgba(156, 163, 175, 1);
+    margin-bottom: 4px;
+}
+
+.input-group input {
+    width: 100%;
+    border-radius: 0.375rem;
+    border: 1px solid rgba(55, 65, 81, 1);
+
+    background-color: rgba(46, 43, 43, 10);
+    padding: 11px 10px;
+
+    color: rgba(156, 163, 175, 1);
+    font-size: 0.8em;
+
+    margin-bottom: 10px;
+}
+
+.input-group input:hover{
+    border-color: rgb(182, 182, 40);
+}
+
+.sign input{
+    width: 100%;
+    background-color: rgba(182, 182, 40, 3);
+    padding: 11px 3px;
+    text-align: center;
+    color: rgba(17, 24, 39, 1);
+    border: none;
+    border-radius: 0.375rem;
+    font-weight: 600;
+
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.error{
+    display: flex;
+    align-items: center;
+    width: 87%;
+    color: rgb(226, 19, 19) !important;
+}
+
+.error img{
+    height: 15px;
+    margin-right: 10px;
+}
+
+input.empty{
+    border-color: red;
+}
+
+input.check{
+    border-color: rgb(182, 182, 40);
+}
+
+.hidden{
+    display: none;
+}
+
+@media(max-width: 640px){
+    .form-container{
+        width: 60%;
+    }
+
+    #data{
+        flex-direction: column;
+    }
+
+    .form-container{
+        height: fit-content;
+    }
+}
+

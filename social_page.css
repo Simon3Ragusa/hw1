@@ -1,0 +1,224 @@
+#title-quote{
+    margin-top: 0;
+}
+
+#research{
+    position: relative;
+
+    color: rgb(184, 173, 151);
+    padding: 20px;
+
+    width: 70%;
+
+    border:solid rgb(184, 173, 151) 1px;
+}
+
+.user_instance{
+    display: flex;
+    align-items: center;
+
+    color: rgb(184, 173, 151);
+
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgb(17, 17, 17);
+
+    font-size: 1.2em;
+
+    width: 60%;
+}
+
+.user_info{
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+    
+}
+
+.propic-style{
+    width: 95px;
+    height: 95px;
+
+    background-position: center;
+    background-size: cover;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    margin-top: 10px;
+
+    margin-right: 40px;
+    margin-left: 10px;
+
+    border: solid rgb(179, 171, 171) 5px;
+}
+
+#notification-button{
+    position: absolute;
+
+    top: 10px;
+    right: 20px;
+
+}
+
+
+.dropdown-btn{
+    display: flex;
+}
+
+#icon-container{
+    display: flex;
+    align-items: center;
+}
+
+#icon{
+    background-color: rgb(17, 17, 17);
+    background-image: url("bell-notification-svgrepo-com.svg");
+
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+
+    margin-left: 5px;
+}
+
+#not-count{
+    color: rgb(182, 182, 40);
+}
+
+#icon{
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+}
+
+#notification-bar{
+    top: 70px;
+    right: 10px;
+
+    border: none;
+    width: 400px;
+
+    padding: 20px;
+
+    border-radius: 10px;
+    border: solid rgb(184, 173, 151);
+
+    cursor: auto;
+}
+
+.notification{
+    border: solid rgb(184, 173, 151);
+
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 8px;
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+.clickable:hover{
+    color: rgb(179, 171, 171);
+}
+
+.choices{
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 10px;
+}
+
+.choices div{
+    padding: 5px;
+    border: solid rgb(182, 182, 40) 2px;
+
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.show {
+    display: block;
+}
+
+.request{
+
+    height: fit-content;
+    width: fit-content;
+
+    border: solid rgb(179, 171, 171) 2px;
+    border-radius: 20px;
+
+    margin-top: 25px;
+
+    padding: 5px;
+
+    margin-left: auto;
+    margin-top: auto;
+}
+
+.not-found{
+    color: rgb(184, 173, 151);
+
+    margin-left: 20px;
+}
+
+.bridge{
+    display: none;
+}
+
+.mobile_request{
+    display: none;
+    margin-top: auto;
+    margin-left: auto;
+
+    border: solid rgb(179, 171, 171);
+    border-radius: 30%;
+    padding: 10px;
+
+    font-size: 1.3em;
+}
+
+
+@media(max-width: 720px){
+    #research{
+        width: 80%;
+    }
+
+    #notification-button{
+        top: 13px;
+        right: 20px;
+    }
+
+    #notification-bar{
+        width: fit-content;
+    }
+
+    #people-input{
+        width: 80%;
+    }
+
+    .user_instance{
+        width: 90%;
+    }
+
+    .request{
+        display: none;
+    }
+
+    .mobile_request{
+        display: block;
+    }
+}
+
+@media(max-width: 420px){
+    .user_instance{
+        font-size: 0.7em;
+    }
+}
