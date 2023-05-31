@@ -8,7 +8,8 @@ create table users(
     email varchar(255) not null,
     username varchar(255) not null unique,
     password varchar(255) not null,
-    profile_pic varchar(255)
+    profile_pic varchar(255),
+    copertina varchar(255)
 );
 
 create table liked_movies(
